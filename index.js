@@ -1,6 +1,6 @@
 const http = require('http');
 const axios = require('axios');
-const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN || 'EAAWCb28SAA0BR6kIy8NK9K5Wd5lBEkPxjvJ50ohNrSYyn92ArNZAke6bRFeTVr6HtnIcOSY0U5dt3YG3TJOZBtsE3XjUSTLv3oUErEgBLJZCtVnbu25BiS8P8f7KyqvoAMg1XEKbipc2jGcdfiDvJasuf50WnDQobuFFmTyjZChbks3KmK75Fyq7R9ZAC2rbQsab2rT7QNhvL8Yy91sJGHYRrKeCifhZCXBgXJ1wZDZD';
+const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN || 'EAAWCb28SAA0BR32gkSn5t6pgP55ZBNbfesI6WcfRTY4bEucWXsy3kaQlj2WHiy2idjb0R6dEeHUoeZAUPbVgVeU4d7cprqxBEIZC9LZAMDp8cpctO2bGTnQ8oN9DvXk1h8iX7k9Kc0F9URSiX801XwLYjZBDWN5XJz3vo8AqGRbXzF4osDb6CXA6HLpifIoh2pjyN4vWf5n4sb6vt4ZBykAtYfpjjdSBIZB6X9KzX1kZAXuhllFJPoHJp03ZA6R7a5OTe1IXOUeRSHAijCOrMgDpPIEZBZA';
 const PAGE_ID = process.env.PAGE_ID || '107484912297289';
 const server = http.createServer(async (req, res) => {
   if (req.method === 'POST' && req.url === '/post') {
