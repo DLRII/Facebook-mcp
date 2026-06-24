@@ -1,6 +1,6 @@
 const http = require('http');
 const axios = require('axios');
-const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN || 'EAAWCb28SAA0BR32gkSn5t6pgP55ZBNbfesI6WcfRTY4bEucWXsy3kaQlj2WHiy2idjb0R6dEeHUoeZAUPbVgVeU4d7cprqxBEIZC9LZAMDp8cpctO2bGTnQ8oN9DvXk1h8iX7k9Kc0F9URSiX801XwLYjZBDWN5XJz3vo8AqGRbXzF4osDb6CXA6HLpifIoh2pjyN4vWf5n4sb6vt4ZBykAtYfpjjdSBIZB6X9KzX1kZAXuhllFJPoHJp03ZA6R7a5OTe1IXOUeRSHAijCOrMgDpPIEZBZA';
+const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN || 'EAAWCb28SAA0BR82zZC1m3ZCh8GvWhj93UrUicxlIqoFmsHvyN9E8ThrwzOTcTZAcK1aF4yqlMZBtOn9Q6XZAgLk18ZCJLLxSgVFMTNi5oJrnADOBt4S0LFFA0nfDiA9G7uJswl40ai5WYTet8r3iqnTXSD4mrYBqD34AbgtBpWZANZBkz1F0AeFWVCfJ6R6i3cLZBDm4ZD';
 const PAGE_ID = process.env.PAGE_ID || '107484912297289';
 const server = http.createServer(async (req, res) => {
   if (req.method === 'POST' && req.url === '/post') {
