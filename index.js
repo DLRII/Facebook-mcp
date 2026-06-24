@@ -1,7 +1,7 @@
 const http = require('http');
 const axios = require('axios');
-const PAGE_ACCESS_TOKEN = 'EAAWCb28SAA0BR6kIy8NK9K5Wd5lBEkPxjvJ50ohNrSYyn92ArNZAke6bRFeTVr6HtnIcOSY0U5dt3YG3TJOZBtsE3XjUSTLv3oUErEgBLJZCtVnbu25BiS8P8f7KyqvoAMg1XEKbipc2jGcdfiDvJasuf50WnDQobuFFmTyjZChbks3KmK75Fyq7R9ZAC2rbQsab2rT7QNhvL8Yy91sJGHYRrKeCifhZCXBgXJ1wZDZD';
-const PAGE_ID = '107484912297289';
+const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN || 'EAAWCb28SAA0BR6kIy8NK9K5Wd5lBEkPxjvJ50ohNrSYyn92ArNZAke6bRFeTVr6HtnIcOSY0U5dt3YG3TJOZBtsE3XjUSTLv3oUErEgBLJZCtVnbu25BiS8P8f7KyqvoAMg1XEKbipc2jGcdfiDvJasuf50WnDQobuFFmTyjZChbks3KmK75Fyq7R9ZAC2rbQsab2rT7QNhvL8Yy91sJGHYRrKeCifhZCXBgXJ1wZDZD';
+const PAGE_ID = process.env.PAGE_ID || '107484912297289';
 const server = http.createServer(async (req, res) => {
   if (req.method === 'POST' && req.url === '/post') {
     let body = '';
